@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Card Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>War Card Game</h1>
+      <p>Play against the browser AI. Select 1 or 2 cards, then press Play.</p>
+    </header>
+
+    <section class="board">
+      <div class="panel status-panel">
+        <h2>Status</h2>
+        <div id="status"></div>
+        <div class="buttons">
+          <button id="playBtn" disabled>Play Selected</button>
+          <button id="newGameBtn">New Game</button>
+        </div>
+      </div>
+
+      <div class="panel ai-panel">
+        <h2>AI</h2>
+        <div id="aiInfo"></div>
+        <div id="aiCards"></div>
+      </div>
+    </section>
+
+    <section class="panel hand-panel">
+      <h2>Your Hand</h2>
+      <div id="hand" class="hand"></div>
+      <p class="hint">Select up to 2 cards.</p>
+    </section>
+
+    <section class="panel log-panel">
+      <h2>Game Log</h2>
+      <div id="log" class="log"></div>
+    </section>
+  </div>
+
+  <script src="warGame.js"></script>
+</body>
+</html>
